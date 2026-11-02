@@ -1,0 +1,8 @@
+# Configuração mínima para o Supabase CLI (supabase link / functions deploy / db push).
+project_id = "chefia"
+
+[functions.analyze-image]
+verify_jwt = true
+
+[functions.generate-recipes]
+verify_jwt = true

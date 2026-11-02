@@ -1,0 +1,62 @@
+{
+  "expo": {
+    "name": "ChefIA",
+    "slug": "chefia",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "chefia",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "bundleIdentifier": "com.chefia.app",
+      "supportsTablet": true,
+      "config": {
+        "usesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "package": "com.chefia.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#1E8E5A",
+        "foregroundImage": "./assets/images/android-icon-foreground.png",
+        "monochromeImage": "./assets/images/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "output": "single",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#0F5136",
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 120
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "O ChefIA acessa suas fotos para identificar os ingredientes que você escolher.",
+          "cameraPermission": "O ChefIA usa a câmera para fotografar sua geladeira e identificar os ingredientes.",
+          "microphonePermission": false
+        }
+      ],
+      "expo-build-properties"
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "68ab9c55-6162-4efe-bd16-3ef7b26a805f"
+      }
+    },
+    "owner": "zfire"
+  }
+}
